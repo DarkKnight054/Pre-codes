@@ -7,11 +7,11 @@ ll bigmod(ll a,ll b,ll mod)
 	if(b&1)ret = (ret*a)%mod;
 	return ret%mod;
 }
-ll ncr(ll n,ll r)
+ll ncr(ll n,ll r,ll mod)
 {
 	if(n<r)return 0;
 	ll m = ( ( fact[r]%mod ) * ( fact[n-r]%mod ) ) % mod;
-	m = bigmod( m , mod-2 );
+	m = bigmod( m , mod-2 , mod );
 	m = ( ( fact[n] % mod ) * m ) %mod;
 	return m;
-}	
+}
