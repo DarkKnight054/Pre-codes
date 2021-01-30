@@ -1,0 +1,23 @@
+Do you know,Messi and Ronaldo ? They are monster in football ground . Peole always bargain who is better between them .
+So, They come to an conclusion . Ronaldo throws a problem toward messi . There will be an array and a number X . Messi have to
+choose an subarray so that ((x / sum of subarray)*y)%(10^9+7) will be maximum.
+
+Input: 
+
+There will be a subarray length n & 1<=n<=1000 . The value of Ai will be fit into 32 bit integer . Next,there will be t numbers
+x & y where 1<=t<=100,1<x=<10^7,1<=y<=10^14.
+
+Ouput:
+
+Print the start and end index of the desired subarray . If there is multiple solution print the shortest subarray .
+
+Sample Input :
+
+4
+2 6 -3 7
+2
+7 2
+8 13
+
+Sample Output :
+

@@ -1,0 +1,17 @@
+vector<ll>fact;
+ll bigmod(ll a,ll b,ll mod)
+{
+	if(b==1)return a%mod;
+	ll ret = bigmod(a,b/2,mod)%mod;
+	ret = (ret*ret)%mod;
+	if(b&1)ret = (ret*a)%mod;
+	return ret%mod;
+}
+ll ncr(ll n,ll r)
+{
+	if(n<r)return 0;
+	ll m = ( ( fact[r]%mod ) * ( fact[n-r]%mod ) ) % mod;
+	m = bigmod( m , mod-2 );
+	m = ( ( fact[n] % mod ) * m ) %mod;
+	return m;
+}	

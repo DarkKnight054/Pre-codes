@@ -1,0 +1,16 @@
+Gaming is now a popular source of entertainment. Moreover, Some Games have huge popularity all over the world.Call of
+Duty is one of them. The Game is very simple. You have to kill enemies before they kill you. You'll win if your team 
+reaches the kill limit first. If your team wins ,you'll be man of the match if you gain more points than your teammates.
+Suppose, Your teammates kill x enemies and die y times. The kill-limit is z. How many points you can gain if your team wins
+the game? You can earn 'a' points by kills an enemie by an weapon. After killing c enemies you will get a special weapon.
+you can use it on one enemie at most. By killing an enemie with the special weapon you can earn 'b' points. To get special 
+weapon again you have to kill a enemies again.
+
+Input:
+
+The input will be given 6 integers as follows : z,x,y,a,b,c where
+1<=z<=10^9,1<=x<=z,1<=y<=z,1<=a<=200,1<=b<=250,1<=c<=z
+
+Ouput:
+
+Print how many points you can earn
